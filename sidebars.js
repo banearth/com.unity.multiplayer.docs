@@ -118,6 +118,25 @@ module.exports = {
             "label": "Networking Components",
             "items": [
                 {
+                    type: "category",
+                    label: "NetworkManager",
+                    link: {type: "doc", id: "components/networkmanager/networkmanager"},
+                    items: [
+                        {
+                            type: "doc",
+                            id: "components/networkmanager/nm_start",
+                        },
+                        {
+                            type: "doc",
+                            id: "components/networkmanager/nm_connect",
+                        },
+                        {
+                            type: "doc",
+                            id: "components/networkmanager/nm_disconnect",
+                        },
+                    ],
+                },
+                {
                     "type": "doc",
                     "id": "basics/networkobject"
                 },
@@ -132,10 +151,6 @@ module.exports = {
                 {
                     "type": "doc",
                     "id": "advanced-topics/physics"
-                },
-                {
-                    "type": "doc",
-                    "id": "components/networkmanager"
                 },
                 {
                     "type": "doc",
