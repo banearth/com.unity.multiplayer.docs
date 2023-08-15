@@ -11,11 +11,17 @@ To learn more about Netcode for GameObjects functionality and capabilities, expl
 <!--
 <div className="table-columns-plain" >
 | Get Started | Configuration | Samples and Education|
+|---|---|---|
+| - | - | - |
 
 </div>
 
 <div className="table-columns-plain" >
 | Networking Components | Spawning and Ownership | Network Synchronization |
+|---|---|---|
+| - | Object Spawning | - |
+| - | Object Visibility | - |
+| - | Object Pooling | - |
 
 </div>
 

@@ -1,8 +1,6 @@
 ---
 id: networkanimator
 title: NetworkAnimator
-created: 2023-01-24T18:34:06-06:00
-updated: 2023-01-24T18:34:06-06:00
 ---
 
 # NetworkAnimator

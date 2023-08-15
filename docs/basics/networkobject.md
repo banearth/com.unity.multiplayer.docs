@@ -133,6 +133,28 @@ You can only have one `NetworkObject` at the root of a Prefab. Don't create Pref
 
 :::
 
+<!-- Originally from "Object Spawning"
+## Network Prefabs
+
+A network Prefab is any unity Prefab asset that has one `NetworkObject` component attached to a `GameObject` within the prefab. More commonly, the `NetworkObject` component is attached to the root `GameObject` of the Prefab asset because this allows any child `GameObject` to have `NetworkBehaviour` components automatically assigned to the `NetworkObject`. The reason for this is that a `NetworkObject` component attached to a `GameObject` will be assigned (associated with) any `NetworkBehaviour` components on:
+
+- the same `GameObject` that the `NetworkObject` component is attached to
+- any child or children of the `GameObject` that the `NetworkObject` is attached to.
+
+:::note
+A caveat of the above two rules is when one of the children `GameObject`s also has a `NetworkObject` component assigned to it (a.k.a. "Nested NetworkObjects"). Because nested `NetworkObject` components aren't permited in network prefabs, Netcode for GameObjects will notify you in the editor if you are trying to add more than one `NetworkObject` to a Prefab and won't allow you to do this.
+:::
+
+When a `NetworkBehaviour` is assigned to a `NetworkObject`, the `NetworkObject.NetworkObjectId` is used to help determine which `NetworkBehaviour` component instance will receive an update to a `NetworkVariable` or where to invoke an RPC. A `NetworkObject` component can have one or more `NetworkBehaviour` components assigned to it.
+
+### Registering a Network Prefab
+
+You must register a Network Prefab instance with a `NetworkManager` via the `NetworkPrefabsList`.
+The two steps to registering a network Prefab with a `NetworkManager`:
+
+1. Create a Network Prefab by creating a Prefab with a `NetworkObject` component attached to the root `GameObject`
+2. Add your Network Prefab to the Network Prefabs List that's associated with a `NetworkManager`.
+-->
 ## Spawning with (or without) Observers
 ![image](/img/SpawnWithObservers.png)
 
